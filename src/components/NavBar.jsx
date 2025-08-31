@@ -21,7 +21,10 @@ const NavItems = [
 export const NavBar = () => {
   return (
     <nav className="flex items-center justify-between px-6 py-4   border-b border-gray-200 ">
-      <img src={LogoFinal} alt="logo" />
+      <div className="flex items-center">
+      <img src={LogoFinal} alt="logo" /> 
+      <span className="ml-0.5 text-xl font-bold text-blue-900">Peak Store</span>
+      </div>
       <ul className="flex space-x-6">
         {NavItems.map((item) => (
           <li key={item.name} className='relative group'>
