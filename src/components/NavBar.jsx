@@ -20,7 +20,7 @@ const NavItems = [
 ];
 export const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 ">
+    <nav className="flex items-center justify-between px-6 py-4  bg-gray-900 border-b border-gray-200 text-white">
       <img src={LogoFinal} alt="logo" />
       <ul className="flex space-x-6">
         {NavItems.map((item) => (
