@@ -20,10 +20,10 @@ const NavItems = [
 ];
 export const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-4   border-b border-gray-200 ">
+    <nav className="flex items-center justify-between px-6 py-4 ">
       <div className="flex items-center">
-      <img src={LogoFinal} alt="logo" /> 
-      <span className="ml-0.5 text-xl font-bold text-blue-900">Peak Store</span>
+      <img src={LogoFinal} alt="logo"  /> 
+      <span className=" text-xl font-bold text-blue-900">Peak Store</span>
       </div>
       <ul className="flex space-x-6">
         {NavItems.map((item) => (
