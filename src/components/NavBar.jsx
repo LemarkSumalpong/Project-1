@@ -20,9 +20,9 @@ const NavItems = [
 ];
 export const NavBar = () => {
   return (
-    <nav className="flex items-center justify-between px-6 py-4 ">
-      <div className="flex items-center">
-      <img src={LogoFinal} alt="logo"  /> 
+    <nav className="flex items-center justify-between px-6 py-4 bg-yellow-200">
+      <div className="flex items-center gap-2">
+      <img src={LogoFinal} alt="logo" className="h-15 w-auto"  /> 
       <span className=" text-xl font-bold text-blue-900">Peak Store</span>
       </div>
       <ul className="flex space-x-6">
@@ -32,7 +32,7 @@ export const NavBar = () => {
               {item.name}
             </a>
             {item.subItems && (
-              <ul className="absolute left-0 mt-2 hidden group-hover:block text-block rounded-full">
+              <ul className="absolute left-0 mt-2 w-40 hidden group-hover:block bg-white text-black shadow-lg rounded-md">
                 {item.subItems.map((sub) => (
                   <li key={sub.name}>
                     <a
@@ -48,9 +48,13 @@ export const NavBar = () => {
           </li>
         ))}
       </ul>
-      <div className="relative flex w-full gap-2 md:w-max">
-        <Search size={20} / >
-        <input type="text" placeholder="search here" className='px-3 py-1 border border-gray-300 rounded-full'></input>
+      <div className="relative flex items-center gap-2 md:w-64">
+        <Search size={20} className="absolute left-3 text-blue-400" />
+        <input
+          type="text"
+          placeholder="Search here"
+          className="w-full pl-10 pr-3 py-1 border border-blue-900 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
       </div>
     </nav>
   );
