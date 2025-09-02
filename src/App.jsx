@@ -3,7 +3,8 @@ import Home from './components/Home';
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-[#0D1B2A]">
+
       <NavBar />
       <Home />
     </div>
