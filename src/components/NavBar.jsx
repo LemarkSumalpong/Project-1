@@ -23,7 +23,7 @@ export const NavBar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-yellow-200 shadow-md z-50">
+    <nav className="fixed top-0 left-0 w-full bg-gray-100 shadow-md z-50">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo Section */}
         <div className="flex items-center gap-2">
