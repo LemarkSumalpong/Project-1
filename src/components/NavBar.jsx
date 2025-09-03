@@ -1,22 +1,22 @@
-import { useState } from "react";
-import { Search, Menu, X } from "lucide-react";
-import LogoFinal from "../assets/LogoFinal.png";
+import { useState } from 'react';
+import { Search, Menu, X } from 'lucide-react';
+import LogoFinal from '../assets/LogoFinal.png';
 
 const NavItems = [
-  { name: "Home", href: "#home" },
-  { name: "Shop", href: "#shop" },
+  { name: 'Books', href: '#book' },
+  { name: 'Electronics', href: '#electronics' },
   {
-    name: "Category",
-    href: "#category",
+    name: 'Clothing',
+    href: '#clothing',
     subItems: [
-      { name: "Books", href: "#book" },
-      { name: "Electronics", href: "#electronics" },
-      { name: "Clothing", href: "#clothing" },
-      { name: "Accessories", href: "#accessories" },
-      { name: "Sales", href: "#sales" },
+      { name: 'Men', href: '#men' },
+      { name: 'Women', href: '#women' },
+      { name: 'Kids', href: '#kids' },
+      { name: 'Unisex', href: '#unisex' },
     ],
   },
-  { name: "Cart", href: "#cart" },
+  { name: 'Accessories', href: '#accessories' },
+  { name: 'Sales', href: '#sales' },
 ];
 
 export const NavBar = () => {
