@@ -4,21 +4,31 @@ export const Home = () => {
       id="home"
       className=" relative flex items-center min-h-screen bg-[#0D1B2A]"
     >
-      <div>
+      <div className="mb-6 mt-4 px-6 py-2">
         <h1 className="text-white font-bold text-5xl leading-tight max-w-2xl">
           Your one-stop shop for everything you need
         </h1>
-        <span className="text-white font-medium text-2xl">
+        <span className="text-white font-medium  text-2xl">
           Discover exclusive deals today
         </span>
       </div>
-      < div className="max-w-3xl w-full text-center">
-      <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden">
-        <img src="/background.jpg"
+      <div className="max-w-3xl w-full text-center">
+        <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden flex">
+          <img
+            src="/background.jpg"
             alt="Promo"
-            className="w-full object-cover" />
-
-      </div>
+            className="h-[500px] w-1/2 object-cover"
+          />
+          <div className="w-1/2 flex flex-col justify-center items-center p-6">
+            <h2 className="text-6xl font-bold text-blue-900">50% OFF</h2>
+            <p className="text-gray-700 mt-2">
+              Limited time only on selected items!
+            </p>
+            <button className="mt-4 px-6 py-2 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 cursor-pointer">
+              SHOP NOW
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );
