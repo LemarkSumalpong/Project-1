@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Search, Menu, X } from 'lucide-react';
+import { Search, Menu, X, Heart, ShoppingCart, User } from 'lucide-react';
 import LogoFinal from '../assets/LogoFinal.png';
 
 const NavItems = [
@@ -60,14 +60,26 @@ export const NavBar = () => {
         </ul>
 
         {/* Search Bar */}
-        <div className="relative hidden md:flex items-center w-64">
+        <div className="relative hidden md:flex items-center w-50">
           <Search size={18} className="absolute left-3 text-gray-500" />
           <input
             type="text"
             placeholder="Search here"
-            className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full pl-10 pr-3 py-2 border border-gray-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
+
+        <div className="flex items-center space-x-4">
+    <button className="text-blue-900 cursor-pointer">
+      <Heart size={22} />
+    </button>
+    <button className="text-blue-900 cursor-pointer">
+      <ShoppingCart size={22} />
+    </button>
+    <button className="text-blue-900 cursor-pointer">
+      <User size={22} />
+    </button>
+  </div>
 
         {/* Mobile Hamburger */}
         <button
