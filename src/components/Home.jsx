@@ -19,15 +19,27 @@ export const Home = () => {
             alt="Promo"
             className="h-[500px] w-1/2 object-cover"
           />
-          <div className="w-1/2 flex flex-col justify-center items-center p-6">
-            <h2 className="text-6xl font-bold text-blue-900">50% OFF</h2>
-            <p className="text-gray-700 mt-2">
-              Limited time only on selected items!
-            </p>
-            <button className="mt-4 px-6 py-2 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 cursor-pointer">
-              SHOP NOW
-            </button>
-          </div>
+           <div className="w-1/2 relative flex flex-col justify-center items-center p-6">
+            {/* Make background2.jpg cover this half */}
+            <img
+              src="/background2.jpg"
+              alt="Promo"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
+
+            {/* Content goes on top */}
+            <div className="relative z-10 text-center">
+              <h2 className="text-6xl font-bold text-white drop-shadow-lg">
+                50% OFF
+              </h2>
+              <p className="text-white mt-2 drop-shadow-lg">
+                Limited time only on selected items!
+              </p>
+              <button className="mt-4 px-6 py-2 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 cursor-pointer">
+                SHOP NOW
+              </button>
+            </div>
+            </div>
         </div>
       </div>
     </section>
