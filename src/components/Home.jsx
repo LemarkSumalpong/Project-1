@@ -9,7 +9,7 @@ export const Home = () => {
           Your one-stop shop for everything you need
         </h1>
         <span className="text-white font-medium  text-2xl">
-          Discover exclusive deals today
+          Discover exclusive deals today!
         </span>
       </div>
       <div className="max-w-3xl w-full text-center">
