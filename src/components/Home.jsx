@@ -27,7 +27,7 @@ export const Home = () => {
               className="absolute inset-0 h-full w-full object-cover"
             />
 
-            {/* Content goes on top */}
+            {/* Content on top */}
             <div className="relative z-10 text-center">
               <h2 className="text-6xl font-bold text-white drop-shadow-lg">
                 50% OFF
