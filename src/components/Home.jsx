@@ -36,7 +36,7 @@ export const Home = () => {
                 Limited time only on selected items!
               </p>
               <button className="mt-4 px-6 py-2 bg-blue-700 text-white font-medium rounded-full hover:bg-blue-800 cursor-pointer">
-                BUY NOW
+                BUY NOW!
               </button>
             </div>
             </div>
